@@ -1,3 +1,4 @@
+# pylint: disable=import-error
 """
 URL configuration for property_scout project.
 

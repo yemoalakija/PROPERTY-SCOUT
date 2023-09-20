@@ -1,6 +1,7 @@
+# pylint: disable=import-error
 """User model for accounts app"""
 from django.db import models
-from django.contrib.auth.models import AbstractbaseUser, BaseUserManager, PermissionsMixin
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
 
 # Create your models here.
@@ -30,7 +31,7 @@ class UserAccountManager(BaseUserManager):
         return user
 
 
-class UserAccount(AbstractbaseUser, PermissionsMixin):
+class UserAccount(AbstractBaseUser, PermissionsMixin):
     """Custom user model that supports using email instead of username"""
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
