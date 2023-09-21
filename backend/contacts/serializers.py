@@ -1,4 +1,5 @@
 # pylint: disable=import-error
+"""Contacts admin"""
 from rest_framework import serializers
 from .models import Contact
 

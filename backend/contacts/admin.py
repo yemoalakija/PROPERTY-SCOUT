@@ -1,4 +1,5 @@
 # pylint: disable=import-error
+"""Contacts admin"""
 from django.contrib import admin
 from .models import Contact
 
