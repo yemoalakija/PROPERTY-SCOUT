@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import styles from "../App.module.css";
 import NavBar from "../components/NavBar";
+import PageNotFound from "../components/PageNotFound";
 
 
 const Layout = (props) => {
@@ -54,13 +55,5 @@ const Layout = (props) => {
       </div>
     );
 }
-
-function PageNotFound() {
-    return (
-        <div>
-            <h1>404: Page not found!</h1>
-        </div>
-    )
-};
 
 export default Layout;
