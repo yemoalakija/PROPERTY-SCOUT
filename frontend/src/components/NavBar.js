@@ -27,6 +27,34 @@ const NavBar = () => {
             <NavLink
               className={styles.NavLink}
               activeClassName={styles.Active}
+              to="/about"
+            >
+              <i class="fa-solid fa-address-card"></i>About
+            </NavLink>
+            <NavLink
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/contact"
+            >
+              <i className="fas fa-address-book"></i>Contact
+            </NavLink>
+            <NavLink
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/listings"
+            >
+              <i class="fa-solid fa-list-check"></i>Listings
+            </NavLink>
+            <NavLink
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/listing/:id"
+            >
+              <i class="fa-solid fa-list-ol"></i>Listing ID
+            </NavLink>
+            <NavLink
+              className={styles.NavLink}
+              activeClassName={styles.Active}
               to="/signin"
             >
               <i className="fas fa-sign-in-alt"></i>Sign in
