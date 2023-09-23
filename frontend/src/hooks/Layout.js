@@ -6,7 +6,6 @@ import styles from "../App.module.css";
 import NavBar from "../components/NavBar";
 import PageNotFound from "../components/PageNotFound";
 
-
 const Layout = (props) => {
     return (
       <div className={styles.App}>
